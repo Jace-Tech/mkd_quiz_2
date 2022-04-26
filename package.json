@@ -1,0 +1,21 @@
+{
+  "name": "node_task_1",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "main": "index.js",
+  "repository": "http://104.225.217.239:3000/manaknight/node_task_1.git",
+  "author": "<alexjace151@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "csv-parser": "^3.0.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.18.0",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.19.0",
+    "stripe": "^8.219.0"
+  }
+}
