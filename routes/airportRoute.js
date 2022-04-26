@@ -4,6 +4,6 @@ import { getAllAirports } from "../controller/AirportController.js"
 const router = express.Router()
 
 // GET ROUTE [AIRPORT]
-router.get("/airport", getAllAirports)
+router.get("/", getAllAirports)
 
 export default router

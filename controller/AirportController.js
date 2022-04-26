@@ -1,14 +1,16 @@
 import fs from "fs"
-import express from "express"
+import path from "path"
 import csv from "csv-parser"
 
 export const getAllAirports = async (req, res) => {
-    const data = []
+    const result = []
+    
+    const filePath = path.resolve(process.cwd(), "utils", "airports.csv")
 
-    fs.createReadStream('data.csv')
+    fs.createReadStream(filePath)
     .pipe(csv())
-    .on('data', (data) => data.push(data))
+    .on('data', (data) => result.push(data))
     .on('end', () => {
-        res.status(200).json({data})
+        res.status(200).json({result})
     });
 }

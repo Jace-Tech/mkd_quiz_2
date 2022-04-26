@@ -1,0 +1,152 @@
+/* Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 428px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/img/rain.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.baseline {
+    align-self: flex-end;
+}
+
+.temp {
+    font-size: 8rem;
+    font-weight: 400;
+}
+
+.city {
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.small-text {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #aaa;
+}
+
+.image-icon {
+    width: 50px;
+    
+    object-fit: contain;
+}
+
+
+form {
+    max-width: 400px;
+    width: 100%;
+    padding: 2rem;
+    margin-left: auto;
+    background-color: #fff;
+}
+
+@media (max-width: 767px) {
+    
+    form {
+        margin-left: unset;
+    }
+
+}
+
+.form-group {
+    margin: .5rem 0;
+}
+
+.form-group label {
+    font-size: .75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #666;
+}
+
+.form-input {
+    display: block;
+    width: 100%;
+    padding: .6rem 1rem;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #666;
+    background-color: transparent;
+}
+
+.form-input:focus {
+    outline: none;
+}
+
+
+.divider {
+    width: 100%;
+    margin: 2rem 0;
+    height: 1px;
+    background-color: #ccc;
+}
+
+.checkout {
+    font-size: .85rem;
+    padding: .8rem 0;
+}
+
+.data-list {
+    position: relative;
+}
+
+.datalist {
+    overflow-y: scroll;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    height: 120px;
+    z-index: 10;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 
+                0 8px 15px rgba(0, 0, 0, 0.1)
+    ;
+    transform-origin: top;
+    transform: scaleY(0);
+
+}
+
+.datalist.show {
+    transform: scaleY(1);
+}
+
+
+.data-item {
+    font-size: .9rem;
+    padding: .6rem 1rem;
+    color: #666;
+    cursor: pointer;
+    user-select: none;
+    font-weight: 300;
+}
+
+.data-item:hover {
+    background-color: #eee;
+}
+
